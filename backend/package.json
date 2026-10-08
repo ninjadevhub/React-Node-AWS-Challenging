@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run build && node build/test.js",
-    "build": "tsc"
+    "build": "node api.js && tsc"
   },
   "keywords": [
     "typescript",
