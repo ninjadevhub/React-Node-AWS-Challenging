@@ -22,11 +22,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node init && react-scripts start",
+    "build": "node init && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "run-all": "concurrently \"cd ../posts && yarn dev\" \"cd ../event-bus && yarn dev\" \"cd ../query && yarn dev\" \"cd ../comments && yarn dev\" \"yarn start\""
+    "run-all": "node init && concurrently \"cd ../posts && yarn dev\" \"cd ../event-bus && yarn dev\" \"cd ../query && yarn dev\" \"cd ../comments && yarn dev\" \"yarn start\""
   },
   "eslintConfig": {
     "extends": [
